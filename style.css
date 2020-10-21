@@ -221,11 +221,19 @@ section.about p {
 section.food {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 400px;
 }
 
 section.food .text {
   background-color: #ffd400;
   padding: 60px 80px 50px 80px;
+}
+
+section.food div.image {
+  background-image: url(./1-Assets/blue-bowl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 section.food .text h3 {
@@ -236,4 +244,106 @@ section.food .text h3,
 section.food .text p {
   max-width: 400px;
   margin: 0 auto 30px auto;
+}
+
+section.quote {
+  padding: 130px 80px;
+  background-color: #ffd7b3;
+  text-align: center;
+}
+
+section.quote blockquote {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+section.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.find_us {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #2f6a49;
+  color: #ffb6c4;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section.find_us img {
+  width: 210px;
+  border-radius: 150px;
+}
+
+section.find_us h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+section.find_us div {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+section.logos {
+  color: #fe5504;
+  padding: 50px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+section.logos p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+section.logos div img {
+  margin: 15px 25px;
+  width: 160px;
+  max-height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section.logos img.nyt {
+  width: 225px;
+}
+
+footer {
+  background-color: #ffb6c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Media queries */
+
+@media (max-width: 980px) {
+  section.hero h2 {
+    font-size: 50px;
+    max-width: 500px;
+  }
+
+  section.about h3 {
+    font-size: 20px;
+  }
+
+  section.about {
+    padding: 50px 100px 80px;
+  }
+
+  section.about p,
+  section.quote blockquote {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  section.logos div img {
+    margin: 15px 10px;
+    width: 100px;
+  }
 }
