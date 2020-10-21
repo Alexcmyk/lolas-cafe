@@ -221,7 +221,6 @@ section.about p {
 section.food {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 400px;
 }
 
 section.food .text {
@@ -345,5 +344,29 @@ footer {
   section.logos div img {
     margin: 15px 10px;
     width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.food {
+    grid-template-columns: 1fr;
+  }
+
+  section.food div.image {
+    height: 300px;
+    grid-row: 1;
+  }
+  section.pictures {
+    grid-template-columns: 1fr;
+  }
+
+  section.find_us {
+    grid-template-columns: 1fr;
+  }
+
+  section.logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
